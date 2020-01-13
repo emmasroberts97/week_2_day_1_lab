@@ -4,17 +4,21 @@ class Student
     @student = input_student
     @cohort = input_cohort
   end
+
   #GETTERS
   def student_name()
     return @student
   end
+
   def cohort_name()
     return @cohort
   end
+
   #SETTERS
   def set_student_name(new_name)
     @student = new_name
   end
+  
   def set_student_cohort(new_cohort)
     @cohort = new_cohort
   end
@@ -27,7 +31,7 @@ class Student
 
   def say_favourite_language(language)
     return "I love #{language}"
-  end 
+  end
 
 
 end
