@@ -25,6 +25,10 @@ class Sports
     elsif outcome == "lose"
       @points -= 5
     end
+
+    def add_player(player_name)
+      @roster.push(player_name)
+    end 
   end
   # #GETTERS
   #
