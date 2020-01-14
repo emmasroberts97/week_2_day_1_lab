@@ -71,10 +71,10 @@ class TestLibrary < MiniTest::Test
   end
 
   def test_update_rental_details
-    value = @books.update_rental_details("a_separate_peace", "Emma", "01/03/2020")
+    value = @books.update_rental_details("lord_of_the_rings", "Emma", "01/03/20")
     assert_equal({
       student_name: "Emma",
       date: "01/03/20"
-   }, value)
+   }, @books.return_rental_details("lord_of_the_rings"))
  end
 end

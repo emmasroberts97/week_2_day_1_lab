@@ -41,8 +41,8 @@ class Library
   def update_rental_details(book_name, student_name, date_to_be_returned)
     for book in @library
       if book[:title] == book_name
-        book[:student_name] = student_name
-        book[:date] = date_to_be_returned
+        book[:rental_details][:student_name] = student_name
+        book[:rental_details][:date] = date_to_be_returned
       end
     end
     return book[:rental_details]
